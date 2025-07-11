@@ -1,0 +1,80 @@
+/* === GLOBAL === */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* === HERO BACKGROUND === */
+.hero-bg {
+    background: linear-gradient(to right, #f9f9f9, #fdfdfd);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* === LOGO STYLING === */
+.logo-shadow {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* === TEXT STYLING === */
+.hero-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.hero-subtext {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* === BUTTON STYLING === */
+.btn-primary {
+    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 200, 83, 0.35);
+}
+
+/* === NAVBAR TRANSPARENCY EFFECT === */
+.navbar.bg-secondary {
+    background-color: rgba(70, 78, 90, 0.95) !important;
+
+    /* lekka przezroczystość */
+    backdrop-filter: blur(6px);
+}
+
+/* === SERVICE CARD IMAGE === */
+.card-img {
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+/* === FOOTER (jeśli potrzebujesz) === */
+.footer {
+    background-color: #212529;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.footer a {
+    color: #aaa;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.bg-jurado-background {
+    background-image: url('/assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    /* lub konkretny rozmiar */
+}
