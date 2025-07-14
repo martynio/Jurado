@@ -16,8 +16,7 @@
     <body>
         <header>
             <nav class="bg-opacity-75 bg-success-subtle navbar navbar-expand-lg navbar-light shadow-sm">
-                <div class="container">
-                    <a class="navbar-brand" href="#start"> <img class="navbar-brand-logo" src="assets/svg/logos/napis.svg" alt="JuRaDo Logo" class="logo-shadow"> </a>
+                <div class="container"><a class="navbar-brand" href="#start"> <img class="navbar-brand-logo" src="assets/svg/logos/napis.svg" alt="JuRaDo Logo" class="logo-shadow"> </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -57,7 +56,7 @@
         </header>
         <main role="main">
             <!-- Card List -->
-            <div class="bg-jurado-hero bg-opacity-50 lib-post-header overflow-hidden">
+            <section class="bg-jurado-hero bg-opacity-50 lib-post-header overflow-hidden">
                 <div class="container content-space-2 content-space-lg-3">
                     <div class="row justify-content-lg-between align-items-md-center">
                         <div class="col-md-6 col-lg-5 mb-10 mb-md-0">
@@ -79,30 +78,26 @@
                         <div class="col-md-6">
                             <div class="mb-5">
                                 <h2 class="h1 text-white">Van kleine installaties tot complexe industriële systemen – JuRaDo staat voor vakmanschap, veiligheid en betrouwbaarheid.</h2>
-                            </div>
-                            <a class="btn btn-primary btn-pointer" href="#">Read story</a>
+                            </div><a class="btn btn-primary btn-pointer" href="#">Read story</a>
                         </div>
                         <!-- End Col -->
                     </div>
                     <!-- End Row -->
                 </div>
                 <!-- 🔷 FALA SVG -->
-                <div style="line-height:0; position:relative; z-index:1; overflow:hidden;">
-                    <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display:block; width:100vw; height:150px;">
-                        <path fill="#f7f6f2" d="M0,0 L0,150 L1440,150 L1440,0 
-    C1080,50 720,100 360,50 Z"></path>
-                        <!-- dodatkowa siatka -->
-                        <g stroke="#ddd" stroke-width="0.5">
-                            <line x1="0" y1="30" x2="1440" y2="30"/>
-                            <line x1="0" y1="60" x2="1440" y2="60"/>
-                            <line x1="0" y1="90" x2="1440" y2="90"/>
-                            <line x1="0" y1="120" x2="1440" y2="120"/>
-                        </g>
-                        <!-- wykres sinus -->
-                        <path d="M0 75 Q180 0 360 75 T720 75 T1080 75 T1440 75" stroke="#aaa" stroke-width="1" fill="none"/>
-                    </svg>
-                </div>
-            </div>
+                <!-- SVG separator -->
+                <svg class="hero-separator" viewBox="0 0 1440 150" preserveAspectRatio="none">
+                    <path fill="#f7f6f2" d="M0,0 L0,150 L1440,150 L1440,0 
+      C1080,50 720,100 360,50 Z"></path>
+                    <g stroke="#ddd" stroke-width="0.5">
+                        <line x1="0" y1="30" x2="1440" y2="30"/>
+                        <line x1="0" y1="60" x2="1440" y2="60"/>
+                        <line x1="0" y1="90" x2="1440" y2="90"/>
+                        <line x1="0" y1="120" x2="1440" y2="120"/>
+                    </g>
+                    <path d="M0 75 Q180 0 360 75 T720 75 T1080 75 T1440 75" stroke="#aaa" stroke-width="1" fill="none"/>
+                </svg>
+            </section>
             <!-- End Card List -->
             <!-- Clients -->
             <!-- End Clients -->
@@ -110,7 +105,8 @@
             <div class="container content-space-b-lg-2 content-space-t-2 content-space-t-lg-3 lib-post-list">
                 <div class="container py-5">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-                        <div class="col"><a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
+                        <div class="col">
+                            <a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
                                     <img class="card-img" src="assets/img/580x480/experience.png" alt="Ervaring">
                                 </div> <div class="card-body text-center">
                                     <div class="mb-3">
@@ -120,7 +116,8 @@
                                     <p class="text-muted">Jarenlange expertise als elektromechanicus, Swagelok specialist en teamleider op Shell-projecten.</p>
                                 </div> </a>
                         </div>
-                        <div class="col"><a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
+                        <div class="col">
+                            <a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
                                     <img class="card-img" src="assets/img/580x480/values.png" alt="Waarden">
                                 </div> <div class="card-body text-center">
                                     <div class="mb-3">
@@ -130,7 +127,8 @@
                                     <p class="text-muted">Betrouwbaarheid, veiligheid en aandacht voor detail vormen de kern van ons werk.</p>
                                 </div> </a>
                         </div>
-                        <div class="col"><a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
+                        <div class="col">
+                            <a class="card card-ghost card-transition-zoom h-100" href="#"> <div class="card-transition-zoom-item">
                                     <img class="card-img" src="assets/img/580x480/vision.png" alt="Visie">
                                 </div> <div class="card-body text-center">
                                     <div class="mb-3">
@@ -172,8 +170,7 @@
                                     <li>Diepgaande kennis van industriële elektrische systemen</li>
                                     <li>Coachend leiderschap en motivatie van het team</li>
                                     <li>Veiligheid en kwaliteit altijd op de eerste plaats</li>
-                                </ul>
-                                <a class="btn btn-primary btn-pointer" href="#contact">Neem contact op</a>
+                                </ul><a class="btn btn-primary btn-pointer" href="#contact">Neem contact op</a>
                             </div>
                         </div>
                     </div>
@@ -228,8 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5">
-                    <a href="#contact" class="btn btn-primary">Neem contact op</a>
+                <div class="text-center mt-5"><a href="#contact" class="btn btn-primary">Neem contact op</a>
                 </div>
             </div>
             <!-- End Card Grid -->
@@ -328,8 +324,7 @@
                                 <h1>Waarom goed onderhoud cruciaal is voor uw elektrische installaties</h1>
                                 <p class="text-white-50">
           Regelmatig onderhoud voorkomt storingen, verlengt de levensduur en verhoogt de veiligheid van uw systemen. Lees hoe Jurado Elektrotechniek dit in de praktijk aanpakt. </p>
-                            </div>
-                            <a class="btn btn-primary btn-pointer" href="#">Lees artikel</a>
+                            </div><a class="btn btn-primary btn-pointer" href="#">Lees artikel</a>
                         </div>
                         <!-- End Col -->
                     </div>
@@ -353,72 +348,65 @@
       Betrouwbaar. Veilig. Professioneel. Voor al uw elektrotechnische projecten en teamleiding. </p>
                     </div>
                     <div class="col-md-auto">
-                        <div class="d-grid d-sm-flex gap-3"><a class="btn btn-primary" href="#contact">Neem contact op</a><a class="btn btn-outline-light btn-pointer" href="#diensten">Bekijk diensten</a>
+                        <div class="d-grid d-sm-flex gap-3">
+                            <a class="btn btn-primary" href="#contact">Neem contact op</a>
+                            <a class="btn btn-outline-light btn-pointer" href="#diensten">Bekijk diensten</a>
                         </div>
                     </div>
                 </div>
                 <!-- End Row -->
                 <div class="border-bottom border-white-10">
                     <div class="row py-6">
-                        <div class="col-6 col-sm-4 col-lg mb-7 mb-lg-0"><span class="text-cap text-white">Bedrijf</span>
+                        <div class="col-6 col-sm-4 col-lg mb-7 mb-lg-0">
+                            <span class="text-cap text-white">Bedrijf</span>
                             <ul class="list-unstyled list-py-1 mb-0">
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Over ons</a>
+                                <li><a class="link link-light link-light-75" href="#">Over ons</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Contact</a>
+                                <li><a class="link link-light link-light-75" href="#">Contact</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Diensten</a>
+                                <li><a class="link link-light link-light-75" href="#">Diensten</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Veiligheid</a>
+                                <li><a class="link link-light link-light-75" href="#">Veiligheid</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg mb-7 mb-lg-0"><span class="text-cap text-white">Diensten</span>
+                        <div class="col-6 col-sm-4 col-lg mb-7 mb-lg-0">
+                            <span class="text-cap text-white">Diensten</span>
                             <ul class="list-unstyled list-py-1 mb-0">
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Elektrische installaties</a>
+                                <li><a class="link link-light link-light-75" href="#">Elektrische installaties</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Metingen en audits</a>
+                                <li><a class="link link-light link-light-75" href="#">Metingen en audits</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Moderniseringen</a>
+                                <li><a class="link link-light link-light-75" href="#">Moderniseringen</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Teamleider</a>
+                                <li><a class="link link-light link-light-75" href="#">Teamleider</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0"><span class="text-cap text-white">Gegevens</span>
+                        <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0">
+                            <span class="text-cap text-white">Gegevens</span>
                             <ul class="list-unstyled list-py-1 mb-0">
-                                <li>
-                                    <span class="link-light link-light-75">KVK: 12345678</span>
+                                <li><span class="link-light link-light-75">KVK: 12345678</span>
                                 </li>
-                                <li>
-                                    <span class="link-light link-light-75">BTW: NL001234567B01</span>
+                                <li><span class="link-light link-light-75">BTW: NL001234567B01</span>
                                 </li>
-                                <li>
-                                    <span class="link-light link-light-75">E-mail: <a href="mailto:info@jurado.nl" class="link-light">info@jurado.nl</a></span>
+                                <li><span class="link-light link-light-75">E-mail: <a href="mailto:info@jurado.nl" class="link-light">info@jurado.nl</a></span>
                                 </li>
-                                <li>
-                                    <span class="link-light link-light-75">Tel: <a href="tel:+31612345678" class="link-light">+31 6 1234 5678</a></span>
+                                <li><span class="link-light link-light-75">Tel: <a href="tel:+31612345678" class="link-light">+31 6 1234 5678</a></span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0"><span class="text-cap text-white">Beleid</span>
+                        <div class="col-6 col-sm-4 col-lg mb-7 mb-sm-0">
+                            <span class="text-cap text-white">Beleid</span>
                             <ul class="list-unstyled list-py-1 mb-0">
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Algemene voorwaarden</a>
+                                <li><a class="link link-light link-light-75" href="#">Algemene voorwaarden</a>
                                 </li>
-                                <li>
-                                    <a class="link link-light link-light-75" href="#">Privacybeleid</a>
+                                <li><a class="link link-light link-light-75" href="#">Privacybeleid</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-6 col-sm-4 col-lg"><span class="text-cap text-white">Volg ons</span>
+                        <div class="col-6 col-sm-4 col-lg">
+                            <span class="text-cap text-white">Volg ons</span>
                             <ul class="list-unstyled list-py-2 mb-0">
                                 <li><a class="link link-light link-light-75" href="#"> <div class="d-flex">
                                             <div class="flex-shrink-0">
@@ -443,19 +431,20 @@
                     <div class="col-md mb-3 mb-md-0">
                         <!-- List -->
                         <ul class="list-inline list-px-2 mb-0">
-                            <li class="list-inline-item">
-                                <a class="link link-light link-light-75" href="#">Privacy and Policy</a>
+                            <li class="list-inline-item"><a class="link link-light link-light-75" href="#">Privacy and Policy</a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="link link-light link-light-75" href="#">Terms</a>
+                            <li class="list-inline-item"><a class="link link-light link-light-75" href="#">Terms</a>
                             </li>
-                            <li class="list-inline-item">
-                                <a class="link link-light link-light-75" href="#">Status</a>
+                            <li class="list-inline-item"><a class="link link-light link-light-75" href="#">Status</a>
                             </li>
                             <li class="list-inline-item">
                                 <!-- Button Group -->
-                                <div class="btn-group"><a class="link link-light link-light-75" href="javascript:;" id="selectLanguage" data-bs-toggle="dropdown" aria-expanded="false"> <span class="d-flex align-items-center"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/> <span>English</span> </span> </a>
-                                    <div class="dropdown-menu"><a class="dropdown-item d-flex align-items-center active" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/> <span>English</span> </a><a class="dropdown-item d-flex align-items-center" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description" width="16"/> <span>Deutsch</span> </a><a class="dropdown-item d-flex align-items-center" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description" width="16"/> <span>Español</span> </a>
+                                <div class="btn-group">
+                                    <a class="link link-light link-light-75" href="javascript:;" id="selectLanguage" data-bs-toggle="dropdown" aria-expanded="false"> <span class="d-flex align-items-center"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/> <span>English</span> </span> </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item d-flex align-items-center active" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/> <span>English</span> </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description" width="16"/> <span>Deutsch</span> </a>
+                                        <a class="dropdown-item d-flex align-items-center" href="#"> <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description" width="16"/> <span>Español</span> </a>
                                     </div>
                                 </div>
                                 <!-- End Button Group -->
@@ -473,5 +462,6 @@
             </div>
         </footer>
         <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets\vendor\main.js"></script>
     </body>
 </html>

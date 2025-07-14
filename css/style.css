@@ -12,7 +12,7 @@ body {
 
 .bg-jurado-hero {
     background: url('../assets/img/background.png') center/cover no-repeat;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 /* === LOGO STYLING === */
@@ -72,4 +72,33 @@ body {
 
 .footer a:hover {
     color: #fff;
+}
+
+.hero-separator {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    margin-bottom: -1px;
+
+    /* zapobiega białej linii */
+}
+
+.bg-jurado-hero {
+    background: url('../assets/img/background.png') center/cover no-repeat;
+    min-height: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+}
+
+body {
+    padding-top: 70px;
+
+    /* wysokość navbara */
 }
