@@ -1,18 +1,29 @@
 /* === GLOBAL === */
+html,
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #003b4f;
+}
+
+body {
+    padding-top: 70px;
+
+    /* wysokość navbara */
 }
 
 /* === HERO BACKGROUND === */
 .hero-bg {
-    background: linear-gradient(to right, #f9f9f9, #fdfdfd);
+    background: linear-gradient(to right, #003b4f, #004c60);
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
 .bg-jurado-hero {
-    background: url('../assets/img/background.png') center/cover no-repeat;
+    background: #003b4f url('../assets/img/background.png') center/cover no-repeat;
     min-height: auto;
+    margin-top: 0;
 }
 
 /* === LOGO STYLING === */
@@ -31,7 +42,7 @@ body {
 .hero-subtext {
     font-weight: 300;
     font-size: 1.1rem;
-    color: #555;
+    color: #fff;
 }
 
 /* === BUTTON STYLING === */
@@ -45,12 +56,71 @@ body {
     box-shadow: 0 6px 20px rgba(0, 200, 83, 0.35);
 }
 
-/* === NAVBAR TRANSPARENCY EFFECT === */
-.navbar.bg-secondary {
-    background-color: rgba(70, 78, 90, 0.95) !important;
+/* === NAVBAR === */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 59, 79, 0.95);
+    backdrop-filter: blur(4px);
+    transition: top 0.3s ease-in-out;
+}
 
-    /* lekka przezroczystość */
-    backdrop-filter: blur(6px);
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #00c853;
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+}
+
+.navbar-collapse {
+    background-color: #003b4f;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+/* === DROPDOWN === */
+.dropdown-menu {
+    background-color: rgba(0, 75, 95, 0.95);
+    backdrop-filter: blur(4px);
+    border-radius: 0 0 8px 8px;
+    margin: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #00c853;
+    background: rgba(255,255,255,0.1);
+}
+
+/* === HAMBURGER === */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(5);
+
+    /* białe kreski */
 }
 
 /* === SERVICE CARD IMAGE === */
@@ -59,7 +129,7 @@ body {
     object-fit: cover;
 }
 
-/* === FOOTER (jeśli potrzebujesz) === */
+/* === FOOTER === */
 .footer {
     background-color: #212529;
     color: #ccc;
@@ -74,6 +144,7 @@ body {
     color: #fff;
 }
 
+/* === HERO SEPARATOR === */
 .hero-separator {
     display: block;
     width: 100%;
@@ -83,22 +154,18 @@ body {
     /* zapobiega białej linii */
 }
 
-.bg-jurado-hero {
-    background: url('../assets/img/background.png') center/cover no-repeat;
-    min-height: auto;
+/* === BG NAVBAR (dla klasy opcjonalnej) === */
+.bg-jurado-navbar {
+    background-color: #003b4f;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: top 0.3s ease-in-out;
-}
-
-body {
-    padding-top: 70px;
-
-    /* wysokość navbara */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(0, 59, 79, 0.95) !important;
+        backdrop-filter: blur(4px);
+        padding: 1rem 0;
+        margin: 0;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
 }
